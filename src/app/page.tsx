@@ -435,10 +435,7 @@ interface MonthlyChartProps {
   overallDifference: number | undefined;
 }
 
-export function MonthlyChart({
-  chartData,
-  overallDifference,
-}: MonthlyChartProps) {
+function MonthlyChart({ chartData, overallDifference }: MonthlyChartProps) {
   if (chartData.length === 0) {
     return null;
   }
